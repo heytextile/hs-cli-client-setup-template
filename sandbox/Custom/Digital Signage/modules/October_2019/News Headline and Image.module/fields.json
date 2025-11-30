@@ -1,0 +1,158 @@
+[ {
+  "id" : "1d3190bb-5789-0b88-ce53-f06ea31f89a6",
+  "name" : "page_theme",
+  "label" : "Page Theme",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "a4dafb49-9e6a-f9c1-10c0-d549e58f9a75",
+    "name" : "theme_choice",
+    "label" : "Color Scheme",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "cerise", "Cerise" ], [ "cirrus", "Cirrus" ], [ "mint", "Mint" ], [ "bone", "Bone" ], [ "slate", "Slate" ], [ "iron", "Iron" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "cerise"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "theme_choice" : "cerise"
+  }
+}, {
+  "id" : "ed699db0-0ff9-1ca3-0eca-1813efa7ecc0",
+  "name" : "page_options",
+  "label" : "Page Options",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "f06bd1d0-ac13-4f35-0cd4-a630717c41e8",
+    "name" : "timeout",
+    "label" : "Timeout (In Seconds)",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null
+  }, {
+    "id" : "7df9eb9c-256d-5506-ade9-9342b7d0a757",
+    "name" : "navigate_to_url",
+    "label" : "Navigate To",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "navigate_to_url" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+}, {
+  "id" : "9f6a6031-db7c-9b97-8d65-13d25f778a11",
+  "name" : "page_content",
+  "label" : "Page Content",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "4ff06968-5e5d-d187-e04f-d496d76cb40a",
+    "name" : "news_headline",
+    "label" : "News Headline",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<h1>Big News Headline Goes Here</h1>"
+  }, {
+    "id" : "78dccb25-d96d-0d29-6c0a-91d6c36d9de7",
+    "name" : "brochure_image",
+    "label" : "Brochure Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "//placehold.it/1668x2160.png",
+      "alt" : "1668x2160",
+      "width" : 1668,
+      "height" : 2160,
+      "max_width" : 1668,
+      "max_height" : 2160
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "news_headline" : "<h1>Big News Headline Goes Here</h1>",
+    "brochure_image" : {
+      "size_type" : "auto",
+      "src" : "//placehold.it/1668x2160.png",
+      "alt" : "1668x2160",
+      "width" : 1668,
+      "height" : 2160,
+      "max_width" : 1668,
+      "max_height" : 2160
+    }
+  }
+}, {
+  "id" : "7731c862-4e63-a397-b490-1e851be4eb78",
+  "name" : "page_footer",
+  "label" : "Page Footer",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "9156e64e-73a6-8b81-1078-7b7fef8ccae5",
+    "name" : "footer",
+    "label" : "Footer Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<p><strong>8:00 am - 9:00 pm M-F</strong></p>\n<p>770-569-1124 | sanctuary.park@rpoperations.com</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "footer" : "<p><strong>8:00 am - 9:00 pm M-F</strong></p>\n<p>770-569-1124 | sanctuary.park@rpoperations.com</p>"
+  }
+} ]

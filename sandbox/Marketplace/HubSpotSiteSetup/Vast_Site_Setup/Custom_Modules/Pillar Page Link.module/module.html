@@ -1,0 +1,14 @@
+{% macro pillarPageLink(outer_text, inner_text, href, coreTopic) %}
+  <div class="hs-cluster-context__pillar-page-link">
+    {{ outer_text }} <a href="{{ href }}">
+      {{ inner_text }}
+    </a>
+  </div>
+{% endmacro %}
+{% if content.id > 1 %}
+  {% set tc = topic_cluster_by_content_id(content.id) %}
+  {% if tc.pillarPage.url.value and tc.pillarPage.publishState == 'PUBLISHED' %}
+    {% set inner_text = module.topic_text.custom_topic_name if module.topic_text.override_core_topic else tc.coreTopic.phrase %}
+    {{ pillarPageLink(module.topic_text.outer_text, inner_text, tc.pillarPage.url.value)|trim }}
+  {% endif %}
+{% endif %}

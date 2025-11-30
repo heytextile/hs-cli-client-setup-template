@@ -1,0 +1,27 @@
+<section class="hero-module hero-module__theme--{{ module.appearance_options.hero_theme }}{% if widget_data.header_overlay.value %} hero-module__overlay{% endif %}" style="background-image: url('{{ module.appearance_options.background_image.src }}');">
+	<div class="hero-module__inner">
+		<div class="container">
+			<div class="hero-module__layout">
+				<div class="hero-module__content--wrapper">
+					<div class="hero-module__content{% if module.appearance_options.hero_theme == 'dark' %} text-color__white{% endif %}">
+						{{ module.hero_content }}
+					</div>
+				</div>
+				<div class="hero-module__form--wrapper">
+					<div class="hero-module__form">
+						{% form
+							form_to_use="{{ module.hero_form.form_id }}"
+							response_response_type="{{ module.hero_form.response_type }}"
+							response_message="{{ module.hero_form.message }}"
+							response_redirect_id="{{ module.hero_form.redirect_id }}"
+							response_redirect_url="{{module.hero_form.redirect_url}}"
+							gotowebinar_webinar_key="{{ module.hero_form.gotowebinar_webinar_key }}"
+              follow_up_type_simple='{{ module.follow_up_type_simple }}'
+              simple_email_for_live_id='{{ module.simple_email_for_live_id }}'
+						%}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

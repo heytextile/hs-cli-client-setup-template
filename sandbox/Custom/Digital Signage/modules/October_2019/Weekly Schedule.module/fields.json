@@ -1,0 +1,374 @@
+[ {
+  "id" : "1d3190bb-5789-0b88-ce53-f06ea31f89a6",
+  "name" : "page_theme",
+  "label" : "Page Theme",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "a4dafb49-9e6a-f9c1-10c0-d549e58f9a75",
+    "name" : "theme_choice",
+    "label" : "Color Scheme",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "cerise", "Cerise" ], [ "cirrus", "Cirrus" ], [ "mint", "Mint" ], [ "bone", "Bone" ], [ "slate", "Slate" ], [ "iron", "Iron" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "cerise"
+  }, {
+    "id" : "3e775ed4-b588-297f-6191-94d00ebfe2ff",
+    "name" : "background_image",
+    "label" : "Background Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : false,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/6172721/fitness.jpg",
+      "alt" : "fitness",
+      "width" : 3840,
+      "height" : 2160
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "theme_choice" : "cerise",
+    "background_image" : {
+      "src" : "https://cdn2.hubspot.net/hubfs/6172721/fitness.jpg",
+      "alt" : "fitness",
+      "width" : 3840,
+      "height" : 2160
+    }
+  }
+}, {
+  "id" : "ed699db0-0ff9-1ca3-0eca-1813efa7ecc0",
+  "name" : "page_options",
+  "label" : "Page Options",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "f06bd1d0-ac13-4f35-0cd4-a630717c41e8",
+    "name" : "timeout",
+    "label" : "Timeout (In Seconds)",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null
+  }, {
+    "id" : "00ee2613-8fb3-3969-53a3-7cc500d97a59",
+    "name" : "navigate_to_url",
+    "label" : "Navigate To",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "navigate_to_url" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+}, {
+  "id" : "d420a635-f03f-3439-cbf0-5b65b5e74ff7",
+  "name" : "page_header",
+  "label" : "Page Header",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "ce487745-4d72-21fe-acfd-15624bdbfdc0",
+    "name" : "page_heading",
+    "label" : "Page Heading",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Welcome to The Clubhouse"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "page_heading" : "Welcome to The Clubhouse"
+  }
+}, {
+  "id" : "6a549579-7017-757b-ed23-1c9df7bd0c6b",
+  "name" : "content",
+  "label" : "Weekly Schedule",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "71ce0d72-7465-4186-10fc-bb8ef331f28a",
+    "name" : "monday",
+    "label" : "Monday",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "4bc3d4a3-64a8-08a2-5cd6-6336061a11d0",
+      "name" : "item_content",
+      "label" : "Item Content",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : null,
+        "max" : null,
+        "sorting_label_field" : null,
+        "default" : 3
+      },
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : [ "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>", "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>", "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>" ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "item_content" : [ "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>", "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>", "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>" ]
+    }
+  }, {
+    "id" : "b9b48c8e-4878-e44a-f52c-659258a37c7b",
+    "name" : "tuesday",
+    "label" : "Tuesday",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "98b4ca97-4845-89ed-205c-93f47b2bf89d",
+      "name" : "item_content",
+      "label" : "Item Content",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : null,
+        "max" : null,
+        "sorting_label_field" : null,
+        "default" : 3
+      },
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : [ "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>", "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>", "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>" ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "item_content" : [ "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>", "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>", "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>" ]
+    }
+  }, {
+    "id" : "52f2855a-4ab6-6c2b-71a6-8848df64b308",
+    "name" : "wednesday",
+    "label" : "Wednesday",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "410aa924-07f6-0456-eebe-43f04ae83a49",
+      "name" : "item_content",
+      "label" : "Item Content",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : null,
+        "max" : null,
+        "sorting_label_field" : null,
+        "default" : 3
+      },
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : [ "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>", "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>", "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>" ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "item_content" : [ "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>", "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>", "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>" ]
+    }
+  }, {
+    "id" : "cdedaa2d-caf1-db4d-2471-c71961df2c79",
+    "name" : "thursday",
+    "label" : "Thursday",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "9877aa70-e74f-bbfa-3353-6f2ae19eb2ed",
+      "name" : "item_content",
+      "label" : "Item Content",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : null,
+        "max" : null,
+        "sorting_label_field" : null,
+        "default" : 3
+      },
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : [ "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>", "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>", "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>" ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "item_content" : [ "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>", "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>", "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>" ]
+    }
+  }, {
+    "id" : "da1e86b5-96cb-d648-69a1-f9313e800b42",
+    "name" : "friday",
+    "label" : "Friday",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "6b40ae69-56aa-a4df-f4bd-d81d9006e8c2",
+      "name" : "item_content",
+      "label" : "Item Content",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : null,
+        "max" : null,
+        "sorting_label_field" : null,
+        "default" : 3
+      },
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : [ "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>", "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>", "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>" ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "item_content" : [ "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>", "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>", "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>" ]
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "monday" : {
+      "item_content" : [ "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>", "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>", "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>" ]
+    },
+    "tuesday" : {
+      "item_content" : [ "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>", "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>", "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>" ]
+    },
+    "wednesday" : {
+      "item_content" : [ "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>", "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>", "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>" ]
+    },
+    "thursday" : {
+      "item_content" : [ "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>", "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>", "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>" ]
+    },
+    "friday" : {
+      "item_content" : [ "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>", "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>", "<h1>H1</h1>\n<hr>\n<h2>H2</h2>\n<h3>H3</h3>" ]
+    }
+  }
+}, {
+  "id" : "7731c862-4e63-a397-b490-1e851be4eb78",
+  "name" : "page_footer",
+  "label" : "Page Footer",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "9156e64e-73a6-8b81-1078-7b7fef8ccae5",
+    "name" : "footer",
+    "label" : "Footer Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<p><strong>8:00 am - 9:00 pm M-F</strong></p>\n<p>770-569-1124 | sanctuary.park@rpoperations.com</p>"
+  }, {
+    "id" : "4b65847d-4f5b-3a36-3892-2b204b39b362",
+    "name" : "left_logo",
+    "label" : "Left Logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : false,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "exact",
+      "src" : "",
+      "alt" : null
+    }
+  }, {
+    "id" : "9e0a3d00-079e-d286-3590-e10a76d111cd",
+    "name" : "right_logo",
+    "label" : "Right Logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : false,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "exact",
+      "src" : "",
+      "alt" : null
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "footer" : "<p><strong>8:00 am - 9:00 pm M-F</strong></p>\n<p>770-569-1124 | sanctuary.park@rpoperations.com</p>",
+    "left_logo" : {
+      "size_type" : "exact",
+      "src" : "",
+      "alt" : null
+    },
+    "right_logo" : {
+      "size_type" : "exact",
+      "src" : "",
+      "alt" : null
+    }
+  }
+} ]

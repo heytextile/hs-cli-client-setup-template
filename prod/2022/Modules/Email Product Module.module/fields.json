@@ -1,0 +1,100 @@
+[ {
+  "id" : "a6ec8c3f-2998-dc5b-0349-50854e5d3639",
+  "name" : "table_heading",
+  "label" : "Table Heading",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "772dc758-f2da-db93-842d-35bb3407e122",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "772dc758-f2da-db93-842d-35bb3407e122",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : { }
+}, {
+  "id" : "944b1342-d79e-3a43-f422-7e3fa47f5404",
+  "name" : "module_content",
+  "label" : "Module Content",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "6f8c489a-1d36-a62d-3c17-9ddc48aaa249",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "6f8c489a-1d36-a62d-3c17-9ddc48aaa249",
+    "name" : "content",
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : "0c9e40ab-1d99-2b6c-4910-5e27731715cd",
+      "default" : null
+    },
+    "children" : [ {
+      "id" : "0c9e40ab-1d99-2b6c-4910-5e27731715cd",
+      "name" : "title",
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "allow_new_line" : false,
+      "type" : "text",
+      "display_width" : null
+    }, {
+      "id" : "f65b1ccd-71ae-1918-b980-34691d7af3be",
+      "name" : "result_text_color",
+      "label" : "Result Text Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "display_width" : null,
+      "default" : {
+        "color" : "#90cfaf",
+        "opacity" : 100
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "result_text_color" : {
+        "color" : "#90cfaf",
+        "opacity" : 100
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "content" : {
+      "result_text_color" : {
+        "color" : "#90cfaf",
+        "opacity" : 100
+      }
+    }
+  }
+} ]

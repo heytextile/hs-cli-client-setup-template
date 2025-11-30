@@ -1,0 +1,204 @@
+[ {
+  "id" : "26380152-bf5f-f4d5-9659-b873ee0312b4",
+  "name" : "vendor_group",
+  "label" : "Vendor Group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "2d0637ec-5806-7a7b-c362-873af5cbea34",
+    "name" : "supplier_logo",
+    "label" : "Supplier Logo",
+    "help_text" : "Include a logo with a transparent background. Ideal size 350w 150h.",
+    "required" : true,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "src" : "https://4188535.fs1.hubspotusercontent-na1.net/hubfs/4188535/Imported%20images/6372de69842506443849eabc_61006350691b465212ee0a81_Swann_logo.png",
+      "alt" : "vendor logo",
+      "width" : 1138,
+      "height" : 473,
+      "max_width" : 1138,
+      "max_height" : 473,
+      "size_type" : "exact"
+    }
+  }, {
+    "id" : "f6102fe5-aeec-2072-827c-9554c56e211b",
+    "name" : "background_image",
+    "label" : "Background Image",
+    "help_text" : "ultra wide",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://4188535.fs1.hubspotusercontent-na1.net/hubfs/4188535/6372de698425069e6d49eabe_610064de065ef491ae08b478_HERO%20Swann.jpeg",
+      "alt" : "a beautiful background image",
+      "loading" : "disabled",
+      "width" : 1920,
+      "height" : 1080,
+      "max_width" : 1920,
+      "max_height" : 1080
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "supplier_logo" : {
+      "src" : "https://4188535.fs1.hubspotusercontent-na1.net/hubfs/4188535/Imported%20images/6372de69842506443849eabc_61006350691b465212ee0a81_Swann_logo.png",
+      "alt" : "vendor logo",
+      "width" : 1138,
+      "height" : 473,
+      "max_width" : 1138,
+      "max_height" : 473,
+      "size_type" : "exact"
+    },
+    "background_image" : {
+      "size_type" : "auto",
+      "src" : "https://4188535.fs1.hubspotusercontent-na1.net/hubfs/4188535/6372de698425069e6d49eabe_610064de065ef491ae08b478_HERO%20Swann.jpeg",
+      "alt" : "a beautiful background image",
+      "loading" : "disabled",
+      "width" : 1920,
+      "height" : 1080,
+      "max_width" : 1920,
+      "max_height" : 1080
+    }
+  }
+}, {
+  "id" : "b5f775b4-165f-eaa6-ad94-db91145f1c46",
+  "name" : "style",
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : { }
+}, {
+  "id" : "8ef0523f-c1e8-550f-8cd5-290ba6d1872b",
+  "name" : "label_group",
+  "label" : "Label Group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "7adc017c-3f3d-84fa-3edc-44d81c52b6a7",
+    "name" : "dashboard_title",
+    "label" : "Dashboard Title",
+    "required" : false,
+    "locked" : false,
+    "placeholder" : "Dashboard Name",
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "WRAP"
+  }, {
+    "id" : "137a5e5d-fc8c-f832-e02f-5b1c69177f17",
+    "name" : "subtitle",
+    "label" : "Subtitle",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Weekly Retail Account Performance"
+  }, {
+    "id" : "8deb36ab-e838-e205-95b2-b6274de9e874",
+    "name" : "id_banner_color",
+    "label" : "ID Banner Color",
+    "help_text" : "",
+    "inline_help_text" : "If full opacity (100%) is desired, clear the input and leave it blank. For all values < 100, enter them directly.",
+    "required" : true,
+    "locked" : false,
+    "type" : "color",
+    "display_width" : null,
+    "default" : {
+      "color" : "#0099ff",
+      "opacity" : null
+    }
+  }, {
+    "id" : "334ef53e-8bb1-ba62-8e30-2871e67e5735",
+    "name" : "white_label_logo",
+    "label" : "White-Label Logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://4188535.fs1.hubspotusercontent-na1.net/hubfs/4188535/6372ded72cabf8ad96b2c945_61003872691b466806ed04ec_WP%20Horiz.svg",
+      "alt" : "wolfpoint logo",
+      "loading" : "lazy",
+      "width" : 400,
+      "height" : 400,
+      "max_width" : 400,
+      "max_height" : 400
+    }
+  }, {
+    "id" : "a5e0f8b8-f22b-f928-38a6-582fd22e2238",
+    "name" : "link_field",
+    "label" : "Link",
+    "required" : true,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://wolfpointgroup.com",
+        "content_id" : null
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "dashboard_title" : "WRAP",
+    "subtitle" : "Weekly Retail Account Performance",
+    "id_banner_color" : {
+      "color" : "#0099ff",
+      "opacity" : null
+    },
+    "white_label_logo" : {
+      "size_type" : "auto",
+      "src" : "https://4188535.fs1.hubspotusercontent-na1.net/hubfs/4188535/6372ded72cabf8ad96b2c945_61003872691b466806ed04ec_WP%20Horiz.svg",
+      "alt" : "wolfpoint logo",
+      "loading" : "lazy",
+      "width" : 400,
+      "height" : 400,
+      "max_width" : 400,
+      "max_height" : 400
+    },
+    "link_field" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://wolfpointgroup.com",
+        "content_id" : null
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : false
+    }
+  }
+} ]

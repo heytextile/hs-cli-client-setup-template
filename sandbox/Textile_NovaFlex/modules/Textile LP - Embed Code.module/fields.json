@@ -1,0 +1,57 @@
+[ {
+  "id" : "05cc767f-658f-ff08-e610-080004db6158",
+  "name" : "html_embed",
+  "label" : "HTML Embed",
+  "required" : false,
+  "locked" : false,
+  "supported_source_types" : [ "html" ],
+  "supported_oembed_types" : [ "photo", "video", "link", "rich" ],
+  "resizable" : true,
+  "show_preview" : true,
+  "supported_media_bridge_providers" : [ ],
+  "type" : "embed",
+  "display_width" : null,
+  "default" : {
+    "source_type" : "html"
+  }
+}, {
+  "id" : "92c58cf0-952f-4df9-0009-ba40ce6dec42",
+  "name" : "appearance_options",
+  "label" : "Appearance Options",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "42801091-1281-d030-1829-ca7bddb7a229",
+    "name" : "background_color",
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "bg__white", "White" ], [ "bg__light", "Light" ], [ "bg__dark text-color__white", "Dark" ], [ "bg__yellow text-color__white", "Yellow" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "bg__yellow text-color__white"
+  }, {
+    "id" : "6d75a9fe-a712-9883-1167-e8dc2c0afe5a",
+    "name" : "remove_top_padding",
+    "label" : "Remove Top Padding",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : false
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "background_color" : "bg__yellow text-color__white",
+    "remove_top_padding" : false
+  }
+} ]

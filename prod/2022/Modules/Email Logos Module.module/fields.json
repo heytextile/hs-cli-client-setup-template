@@ -1,0 +1,57 @@
+[ {
+  "id" : "75eee8ed-0997-b94a-a562-014aa4e3d25f",
+  "name" : "heading_one",
+  "label" : "Heading One",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "BRAND"
+}, {
+  "id" : "f393bf10-586f-6e5b-8251-d4eae3e8148b",
+  "name" : "image_field",
+  "label" : "Logo One",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "src" : "https://4188535.fs1.hubspotusercontent-na1.net/hubfs/4188535/wolfpoint/mobi.png",
+    "alt" : "mobi",
+    "loading" : "lazy",
+    "width" : 120,
+    "height" : 124
+  }
+}, {
+  "id" : "f23ddefc-118e-99be-7f88-d83fd155366d",
+  "name" : "heading_two",
+  "label" : "Heading Two",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "RETAILER"
+}, {
+  "id" : "ae43a795-a8a4-d66e-a6ce-f12ffa965385",
+  "name" : "logo_two",
+  "label" : "Logo Two",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "src" : "https://4188535.fs1.hubspotusercontent-na1.net/hubfs/4188535/wolfpoint/mobi.png",
+    "alt" : "mobi",
+    "loading" : "lazy",
+    "width" : 120,
+    "height" : 124
+  }
+} ]

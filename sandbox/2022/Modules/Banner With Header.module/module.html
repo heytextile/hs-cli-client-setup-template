@@ -1,0 +1,90 @@
+<div id="section-1" class="hse-section hse-section-first"
+     style="padding-left:0px; padding-right:0px; padding-top:0px">
+  <!--[if !((mso)|(IE))]><!-- -->
+  <div class="hse-column-container"
+       style="min-width:280px; max-width:600px; width:100%; Margin-left:auto; Margin-right:auto; border-collapse:collapse; border-spacing:0; background-color:#000000; background-image:url('https://4188535.fs1.hubspotusercontent-na1.net/hubfs/4188535/2022/images/email/textile-pattern.png'); background-position:bottom left; background-repeat:repeat"
+       bgcolor="#000000">
+    <!--<![endif]-->
+    <!--[if (mso)|(IE)]>
+<div class="hse-column-container" style="min-width:280px;max-width:600px;width:100%;Margin-left:auto;Margin-right:auto;border-collapse:collapse;border-spacing:0;">
+<table align="center" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;width:600px;" cellpadding="0" cellspacing="0" role="presentation" width="600" bgcolor="#000000">
+<tr style="background-color:#000000; background-image:url('https://4188535.fs1.hubspotusercontent-na1.net/hubfs/4188535/2022/images/email/textile-pattern.png'); background-position:bottom left; background-repeat:repeat;">
+<![endif]-->
+    <!--[if (mso)|(IE)]>
+<td valign="top" style="width:600px;">
+<![endif]-->
+    <!--[if gte mso 9]>
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;width:600px">
+<![endif]-->
+    <div id="column-1-0" class="hse-column hse-size-12">
+      <div id="hs_cos_wrapper_module_16559636503631"
+           class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"
+           style="color: inherit; font-size: inherit; line-height: inherit;" data-hs-cos-general-type="widget"
+           data-hs-cos-type="module">
+        <table class="hse-image-wrapper" role="presentation" width="100%" cellpadding="0" cellspacing="0"
+               style="border-spacing:0 !important; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+          <tbody>
+            <tr>
+              <td align="center" valign="top"
+                  style="border-collapse:collapse; mso-line-height-rule:exactly; font-family:Trebuchet MS, sans-serif; color:#ecedeb; word-break:break-word; text-align:center; padding:30px 20px 20px; font-size:0px">
+
+                {% set href = module.logo_link.url.href %}
+                {% if module.logo_link.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+                {% endif %}
+                <a href="{{ href }}" {% if module.logo_link.open_in_new_tab %}target="_blank"{% endif %} {% if module.logo_link.rel %}rel="{{ module.logo_link.rel }}"{% endif %} style="color:#00a4bd; mso-line-height-rule:exactly" data-hs-link-id="0">
+                  {% if module.logo_image.src %}
+                  {% set sizeAttrs = 'width="{{ module.logo_image.width }}" height="{{ module.logo_image.height }}"' %}
+                  {% if module.logo_image.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ module.logo_image.width }}" height="{{ module.logo_image.height }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif module.logo_image.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ module.logo_image.max_width }}" height="{{ module.logo_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = module.logo_image.loading != 'disabled' ? 'loading="{{ module.logo_image.loading }}"' : '' %}
+                  <img src="{{ module.logo_image.src }}" alt="{{ module.logo_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+                </a>
+
+              </td>
+            </tr>
+            <tr>
+              <td class="hs_padded"
+                  style="border-collapse:collapse; mso-line-height-rule:exactly; font-family:Trebuchet MS, sans-serif; font-size:20px; color:#ecedeb; word-break:break-word; padding:10px 20px">
+                <div id="hs_cos_wrapper_module_16559637893513"
+                     class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"
+                     style="color: inherit; font-size: inherit; line-height: inherit;"
+                     data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                  <div id="hs_cos_wrapper_module_16559637893513_"
+                       class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text"
+                       style="color: inherit; font-size: inherit; line-height: inherit;"
+                       data-hs-cos-general-type="widget" data-hs-cos-type="rich_text">
+                    {{ module.navigation }}
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="hs_padded"
+                  style="border-collapse:collapse; mso-line-height-rule:exactly; font-family:Trebuchet MS, sans-serif; font-size:20px; color:#ecedeb; word-break:break-word; padding:70px 20px">
+                <div id="hs_cos_wrapper_module_16559640561914"
+                     class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"
+                     style="color: inherit; font-size: inherit; line-height: inherit;"
+                     data-hs-cos-general-type="widget" data-hs-cos-type="module">
+                  <div id="hs_cos_wrapper_module_16559640561914_"
+                       class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text"
+                       style="color: inherit; font-size: inherit; line-height: inherit;"
+                       data-hs-cos-general-type="widget" data-hs-cos-type="rich_text">
+                    {{ module.banner_text }}
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>            
+    </div>
+    <!--[if gte mso 9]></table><![endif]-->
+    <!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+  </div>
+</div>

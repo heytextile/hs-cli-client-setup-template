@@ -1,0 +1,30 @@
+<div id="news_headline" class="oct2019_content-wrapper theme_{{ module.page_theme.theme_choice }}{% if module.page_theme.background_image.src %} has_bg{% endif %}"{% if module.page_theme.background_image.src %} style="background-image: url( {{ module.page_theme.background_image.src }} );"{% endif %}>
+	<div class="page-content">
+		<div class="page-content__wrapper">
+			<div class="page-content__headline">
+				{{ module.page_content.news_headline }}
+			</div>
+		</div>
+	</div>
+	<div class="page-footer">
+		<div class="content-wrapper-container">
+			<div class="col-2 page-footer__logo--left">
+				{% if module.page_footer.left_logo.src %}
+					<img src="{{ module.page_footer.left_logo.src }}" alt="{{ module.page_footer.left_logo.alt }}" width="{{ module.page_footer.left_logo.width }}" height="{{ module.page_footer.left_logo.height }}">
+				{% endif %}
+			</div>
+			<div class="col-8 page-footer__content">
+				{{ module.page_footer.footer }}
+			</div>
+			<div class="col-2 page-footer__logo--right">
+				{% if module.page_footer.right_logo.src %}
+					<img src="{{ module.page_footer.right_logo.src }}" alt="{{ module.page_footer.right_logo.alt }}" width="{{ module.page_footer.right_logo.width }}" height="{{ module.page_footer.right_logo.height }}">
+				{% endif %}
+			</div>
+		</div>
+	</div>
+</div>
+
+{% if module.page_options.timeout and module.page_options.navigate_to_url.url.href and request.query_dict.hsDebug != "True" %}
+<div class="page-transition" data-timeout="{{ module.page_options.timeout }}" data-location="{{ module.page_options.navigate_to_url.url.href }}"></div>
+{% endif %}

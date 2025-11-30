@@ -1,0 +1,92 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: false
+-->
+
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+	<!--[if !mso]><!-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<!--<![endif]-->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<title>{% if content.html_title and content.html_title != '' %}{{ content.html_title }}{% else %}{{ content.body.subject }}{% endif %}</title>
+	{% if content.meta_description %}<meta name="description" content="{{ content.meta_description }}"/>{% endif %}
+
+	<!--[if mso]>
+		<xml>
+		<o:OfficeDocumentSettings>
+			<o:AllowPNG/>
+			<o:PixelsPerInch>96</o:PixelsPerInch>
+		</o:OfficeDocumentSettings> 
+		</xml>
+		<![endif]-->
+	<!--[if lte mso 11]>
+		<style type="text/css">
+			.mj-outlook-group-fix { width:100% !important; }
+		</style>
+		<![endif]-->
+	<!--[if !mso]><!-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Source+Sans+Pro:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Source+Sans+Pro:ital,wght@0,300;0,400;1,700&display=swap');
+	</style>
+	<!--<![endif]-->
+
+	{% include "/textile_heirloom/emails/assets/textile-email-styles.css" %}
+
+</head>
+
+<body>
+
+{% block email_content %}
+	{% content_attribute "email_body" %}
+
+	{% end_content_attribute %}
+{% endblock %}
+
+<center class="email-center">
+	<div class="webkit">
+<!--[if (gte mso 9)|(IE)]>
+<table width="680" align="center">
+<tr>
+<td>
+<![endif]-->
+<table id="footer" class="outer" align="center">
+	<tr>
+		<td class="vertical-spacer">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="inner contents">
+			<p>
+				{{ site_settings.company_name }} • 
+				{{ site_settings.company_street_address_1 }} •
+				{{ site_settings.company_street_address_2 }} •
+				{{ site_settings.company_city }}, {{ site_settings.company_state }} {{ site_settings.company_zip }}
+			</p>
+			<p class="social-icons">
+				<a href="https://www.facebook.com/NovaFlexLed/"><img src="https://f.hubspotusercontent40.net/hubfs/7233392/email-images/NF-facebook-gray.png" alt="Facebook"></a> &nbsp; &nbsp; <a href="https://twitter.com/novaflexled"><img src="https://f.hubspotusercontent40.net/hubfs/7233392/email-images/twitter.png" alt="Twitter"></a> &nbsp; &nbsp; <a href="https://www.instagram.com/novaflexled/"><img src="https://f.hubspotusercontent40.net/hubfs/7233392/email-images/NF-instagram-gray.png" alt="Instagram"></a> &nbsp; &nbsp; <a href="https://www.linkedin.com/company/nova-flex/"><img src="https://f.hubspotusercontent40.net/hubfs/7233392/email-images/NF-linkedIn-grey.png" alt="LinkedIn"></a> &nbsp; &nbsp; <a href="https://www.youtube.com/channel/UCeFjvPwq82iIO_2oDft1Nrw"><img src="https://f.hubspotusercontent40.net/hubfs/7233392/email-images/NF-youtube-grey.png" alt="YouTube"></a> &nbsp; &nbsp; <a href="https://www.pinterest.com/novaflex/?eq=nova%20flex%20led&etslf=6198"><img src="https://f.hubspotusercontent40.net/hubfs/7233392/email-images/NF-pinterest-grey.png" alt="Pinterest"></a>
+			</p>
+			<p class="optout-message">You received this email because you are subscribed to {{ subscription_name }} from {{ site_settings.company_name }} Update your <a class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_link }}">email preferences</a> to choose the types of emails you receive or <a class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_link_all }}">unsubscribe from all future emails</a>.</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="vertical-spacer">&nbsp;</td>
+	</tr>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+	</div>
+</center>
+
+</body>
+
+</html>

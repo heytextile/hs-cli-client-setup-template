@@ -1,0 +1,528 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/Marketplace/HubSpotSiteSetup/Vast_Site_Setup/Coded_Files/vast-style.css"
+  } ],
+  "attachedJs" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/Marketplace/HubSpotSiteSetup/Vast_Site_Setup/Coded_Files/vast-main.js"
+  } ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "site-page three-column",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1518102682877166",
+        "label" : "Vast Theme/Vast Header copy",
+        "type" : "global_group",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "path" : "/Marketplace/HubSpotSiteSetup/Vast_Site_Setup/Templates/Vast Header.template.json",
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_14060509102596068",
+        "label" : "Title Background",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "title-background padding20tb",
+          "css_id" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "value" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_14060509122576316",
+            "label" : "Page Center",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "page-center",
+              "css_id" : "",
+              "css_style" : "",
+              "overrideable" : false,
+              "value" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_15181164972531722",
+                "label" : "Header",
+                "type" : "custom_widget",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "header_type" : "h1",
+                  "overrideable" : true,
+                  "per_widget_wrapper_html" : "",
+                  "schema_version" : 2,
+                  "value" : "Vast Three Column Website Page",
+                  "widget_name" : "Header",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "page-center",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "title-background padding20tb",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_13885006495507970",
+        "label" : "Page Center, Content Wrapper",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "page-center content-wrapper padding60tb",
+          "css_id" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "value" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 4,
+            "name" : "module_13885046520011784",
+            "label" : "Main Content",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "main-content",
+              "css_id" : "",
+              "css_style" : "",
+              "overrideable" : false,
+              "value" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_139532470882380",
+                "label" : "Left Column",
+                "type" : "widget_container",
+                "params" : {
+                  "overrideable" : false,
+                  "value" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ {
+                  "x" : 0,
+                  "w" : 12,
+                  "name" : "module_15181165099541724",
+                  "label" : "Rich Text",
+                  "type" : "custom_widget",
+                  "params" : {
+                    "css_class" : "",
+                    "css_id" : "",
+                    "css_id_str" : "",
+                    "css_style" : "",
+                    "html" : "<h2>Meet our team</h2>\n<p><span>Use your About page to help your visitors learn more about you. We all know that people do business with people, not companies. So tell them a little bit more about yourself as a person. Include profiles of your management team. Upload images so that folks will recognize you at conferences and events. Hey. It's not exactly rocket science. But it works.</span></p>\n<p><span>Use your About page to help your visitors learn more about you. We all know that people do business with people, not companies. So tell them a little bit more about yourself as a person. Include profiles of your management team. Upload images so that folks will recognize you at conferences and events. Hey. It's not exactly rocket science. But it works.</span></p>",
+                    "overrideable" : true,
+                    "per_widget_wrapper_html" : "",
+                    "schema_version" : 2,
+                    "widget_name" : "Rich Text",
+                    "wrapping_html" : ""
+                  },
+                  "rows" : [ ],
+                  "rowMetaData" : [ ],
+                  "cells" : [ ],
+                  "cssId" : "",
+                  "cssClass" : "",
+                  "cssStyle" : "",
+                  "styles" : null,
+                  "widgets" : [ ]
+                } ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "main-content",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ {
+              "x" : 0,
+              "w" : 12,
+              "name" : "module_13885047978573602",
+              "label" : "Rich Text",
+              "type" : "rich_text",
+              "params" : {
+                "html" : "<h2>New Module</h2>\n<p>Add content here.</p>",
+                "is_in_container" : false,
+                "overrideable" : true
+              },
+              "rows" : [ ],
+              "rowMetaData" : [ ],
+              "cells" : [ ],
+              "cssId" : "",
+              "cssClass" : "",
+              "cssStyle" : "",
+              "styles" : null,
+              "widgets" : [ ]
+            } ]
+          },
+          "4" : {
+            "x" : 4,
+            "w" : 4,
+            "name" : "module_13885056585042823",
+            "label" : "Main Content",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "main-content",
+              "css_id" : "",
+              "css_style" : "",
+              "overrideable" : false,
+              "value" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_139532471567283",
+                "label" : "Center Column",
+                "type" : "widget_container",
+                "params" : {
+                  "overrideable" : false,
+                  "value" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ {
+                  "x" : 0,
+                  "w" : 12,
+                  "name" : "module_1518102700292167",
+                  "label" : "Vast Team Member Module copy",
+                  "type" : "custom_widget",
+                  "params" : {
+                    "css_class" : "",
+                    "css_id" : "",
+                    "css_id_str" : "",
+                    "css_style" : "",
+                    "overrideable" : true,
+                    "per_widget_wrapper_html" : "",
+                    "schema_version" : 2,
+                    "widget_name" : "Vast Team Member Module copy",
+                    "wrapping_html" : "",
+                    "path" : "/Marketplace/HubSpotSiteSetup/Vast_Site_Setup/Custom_Modules/Vast Team Member Module"
+                  },
+                  "rows" : [ ],
+                  "rowMetaData" : [ ],
+                  "cells" : [ ],
+                  "cssId" : "",
+                  "cssClass" : "",
+                  "cssStyle" : "",
+                  "styles" : null,
+                  "widgets" : [ ]
+                } ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "main-content",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ {
+              "x" : 0,
+              "w" : 12,
+              "name" : "module_13885056419142322",
+              "label" : "Rich Text",
+              "type" : "rich_text",
+              "params" : {
+                "html" : "<h2>New Module</h2>\n<p>Add content here.</p>",
+                "is_in_container" : false,
+                "overrideable" : true
+              },
+              "rows" : [ ],
+              "rowMetaData" : [ ],
+              "cells" : [ ],
+              "cssId" : "",
+              "cssClass" : "",
+              "cssStyle" : "",
+              "styles" : null,
+              "widgets" : [ ]
+            } ]
+          },
+          "8" : {
+            "x" : 8,
+            "w" : 4,
+            "name" : "module_138850872247720191",
+            "label" : "Main Content",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "main-content",
+              "css_id" : "",
+              "css_style" : "",
+              "overrideable" : false,
+              "value" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_139532476173484",
+                "label" : "Right Column",
+                "type" : "widget_container",
+                "params" : {
+                  "overrideable" : false
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ {
+                  "x" : 0,
+                  "w" : 12,
+                  "name" : "module_1518102706762168",
+                  "label" : "Vast Testimonial copy",
+                  "type" : "custom_widget",
+                  "params" : {
+                    "css_class" : "",
+                    "css_id" : "",
+                    "css_id_str" : "",
+                    "css_style" : "",
+                    "overrideable" : true,
+                    "per_widget_wrapper_html" : "",
+                    "schema_version" : 2,
+                    "widget_name" : "Vast Testimonial copy",
+                    "wrapping_html" : "",
+                    "path" : "/Marketplace/HubSpotSiteSetup/Vast_Site_Setup/Custom_Modules/Vast Testimonial"
+                  },
+                  "rows" : [ ],
+                  "rowMetaData" : [ ],
+                  "cells" : [ ],
+                  "cssId" : "",
+                  "cssClass" : "",
+                  "cssStyle" : "",
+                  "styles" : null,
+                  "widgets" : [ ]
+                } ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "main-content",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ {
+              "x" : 0,
+              "w" : 12,
+              "name" : "module_138850887477321655",
+              "label" : "Sidebar Rich Text",
+              "type" : "rich_text",
+              "params" : {
+                "html" : "<h2>New Module</h2>\n<p>Add content here.</p>",
+                "is_in_container" : false,
+                "overrideable" : true
+              },
+              "rows" : [ ],
+              "rowMetaData" : [ ],
+              "cells" : [ ],
+              "cssId" : "",
+              "cssClass" : "",
+              "cssStyle" : "",
+              "styles" : null,
+              "widgets" : [ ]
+            }, {
+              "x" : 0,
+              "w" : 12,
+              "name" : "module_138850871564619980",
+              "label" : "Call-to-Action",
+              "type" : "cta",
+              "params" : {
+                "is_in_container" : false,
+                "overrideable" : false
+              },
+              "rows" : [ ],
+              "rowMetaData" : [ ],
+              "cells" : [ ],
+              "cssId" : "",
+              "cssClass" : "",
+              "cssStyle" : "",
+              "styles" : null,
+              "widgets" : [ ]
+            } ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "page-center content-wrapper padding60tb",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1518102669782164",
+        "label" : "Vast Theme/Vast Full Width Blog Subscription Module copy",
+        "type" : "global_group",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "path" : "/Marketplace/HubSpotSiteSetup/Vast_Site_Setup/Templates/Vast Full Width Blog Subscription Module.template.json",
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1518102677060165",
+        "label" : "Vast Theme/Vast Footer copy",
+        "type" : "global_group",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "path" : "/Marketplace/HubSpotSiteSetup/Vast_Site_Setup/Templates/Vast Footer.template.json",
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

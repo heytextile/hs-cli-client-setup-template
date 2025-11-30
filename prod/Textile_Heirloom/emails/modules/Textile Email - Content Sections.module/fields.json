@@ -1,0 +1,642 @@
+[ {
+  "id" : "09369271-fa37-32c5-ff92-90d120e047e3",
+  "name" : "content_row",
+  "label" : "Content Row",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "740400f4-f31b-ce1f-d1ee-5c3351ee6d23",
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "740400f4-f31b-ce1f-d1ee-5c3351ee6d23",
+    "name" : "row_type",
+    "label" : "Row Type",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "basic-content", "Basic Content" ], [ "img-content-two-col", "Image+Content Two Column" ], [ "two-col-well", "Two Column Content Well" ], [ "full-width-well", "Full Width Content Well" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "basic-content"
+  }, {
+    "id" : "324626ed-10f5-7d67-cdb0-6bd257c679b9",
+    "name" : "basic_row",
+    "label" : "Section Content (Basic Content)",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "740400f4-f31b-ce1f-d1ee-5c3351ee6d23",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "basic-content",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "children" : [ {
+      "id" : "3f8270f5-b0d5-29ed-5329-318a4769f11b",
+      "name" : "section_content",
+      "label" : "Section Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<h2>Headline Copy Goes Here</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+    }, {
+      "id" : "83c3ec53-e1a8-30f4-e52b-2dece8057652",
+      "name" : "section_button",
+      "label" : "Section Button",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "a3961c4b-94ad-a390-a0d9-afbeb0fe5d8b",
+        "name" : "section_button_link",
+        "label" : "Row Button - Link",
+        "required" : false,
+        "locked" : false,
+        "allow_new_line" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "https://www.novaflexled.com/"
+      }, {
+        "id" : "767f94d6-d000-3640-5003-d2abbd7ad238",
+        "name" : "section_button_text",
+        "label" : "Row Button - Text",
+        "required" : false,
+        "locked" : false,
+        "allow_new_line" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "Call To Action"
+      }, {
+        "id" : "9430a0ba-f538-0798-541a-a510995f8c6f",
+        "name" : "section_button_style",
+        "label" : "Row Button - Style",
+        "required" : false,
+        "locked" : false,
+        "display" : "select",
+        "choices" : [ [ "yellow", "Yellow" ], [ "white-border", "White Border" ] ],
+        "multiple" : false,
+        "reordering_enabled" : true,
+        "preset" : null,
+        "type" : "choice",
+        "display_width" : null,
+        "default" : "yellow"
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : {
+        "section_button_link" : "https://www.novaflexled.com/",
+        "section_button_text" : "Call To Action",
+        "section_button_style" : "yellow"
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "section_content" : "<h2>Headline Copy Goes Here</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+      "section_button" : {
+        "section_button_link" : "https://www.novaflexled.com/",
+        "section_button_text" : "Call To Action",
+        "section_button_style" : "yellow"
+      }
+    }
+  }, {
+    "id" : "5ed7d990-661e-80b2-e006-b51e5744103e",
+    "name" : "img_content_row",
+    "label" : "Section Content (Img + Content)",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "740400f4-f31b-ce1f-d1ee-5c3351ee6d23",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "img-content-two-col",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "children" : [ {
+      "id" : "cc9165dc-0f6c-744c-0743-ba40ea49e0a8",
+      "name" : "section_content_above",
+      "label" : "Section Content (Above)",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<h2>Headline Copy Goes Here</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+    }, {
+      "id" : "0dabe06f-8c9d-bf3b-1a93-aee5c181fcb0",
+      "name" : "row_image",
+      "label" : "Row Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : false,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "src" : "https://f.hubspotusercontent40.net/hubfs/7233392/Imported%20images/800x1000.png",
+        "alt" : "800x1000",
+        "loading" : "lazy",
+        "width" : 800,
+        "height" : 1000,
+        "size_type" : "exact"
+      }
+    }, {
+      "id" : "7493c6c8-1843-2169-01c7-de4dffa9b779",
+      "name" : "row_content",
+      "label" : "Row Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<h2>Headline Copy Goes Here</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+    }, {
+      "id" : "610aabf4-c828-6d5a-46d5-4285d0986922",
+      "name" : "row_button_link",
+      "label" : "Row Button - Link",
+      "required" : false,
+      "locked" : false,
+      "allow_new_line" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "https://www.novaflexled.com/"
+    }, {
+      "id" : "285dc3ae-0f40-2fd6-07f7-90c2808c8144",
+      "name" : "row_button_text",
+      "label" : "Row Button - Text",
+      "required" : false,
+      "locked" : false,
+      "allow_new_line" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Call To Action"
+    }, {
+      "id" : "7e3f4054-d54b-168d-96e1-41f495ef7984",
+      "name" : "image_alignment",
+      "label" : "Image Alignment",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "left", "Left" ], [ "right", "Right" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "left"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "section_content_above" : "<h2>Headline Copy Goes Here</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+      "row_image" : {
+        "src" : "https://f.hubspotusercontent40.net/hubfs/7233392/Imported%20images/800x1000.png",
+        "alt" : "800x1000",
+        "loading" : "lazy",
+        "width" : 800,
+        "height" : 1000,
+        "size_type" : "exact"
+      },
+      "row_content" : "<h2>Headline Copy Goes Here</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+      "row_button_link" : "https://www.novaflexled.com/",
+      "row_button_text" : "Call To Action",
+      "image_alignment" : "left"
+    }
+  }, {
+    "id" : "9db6967e-392d-aba1-bbef-09fdcbda91d5",
+    "name" : "two_column_well_row",
+    "label" : "Section Content (Two Column Well)",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "740400f4-f31b-ce1f-d1ee-5c3351ee6d23",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "two-col-well",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "children" : [ {
+      "id" : "a8e85d8f-14f9-0ced-35a9-14acd70febb7",
+      "name" : "section_content",
+      "label" : "Section Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<h2>Headline Copy Goes Here</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+    }, {
+      "id" : "b75c9d52-b9b3-ab5b-b495-c597a1522b3c",
+      "name" : "content_well",
+      "label" : "Content Well",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : null,
+        "max" : 2,
+        "sorting_label_field" : "4f389f6e-ed34-0e46-f815-cfb2f42b86da",
+        "default" : 2
+      },
+      "children" : [ {
+        "id" : "79b27985-c33c-d582-331d-bacd96a52c61",
+        "name" : "well_image",
+        "label" : "Row Image",
+        "required" : false,
+        "locked" : false,
+        "responsive" : false,
+        "resizable" : true,
+        "show_loading" : false,
+        "type" : "image",
+        "display_width" : null,
+        "default" : {
+          "src" : "https://f.hubspotusercontent40.net/hubfs/7233392/Imported%20images/1920x1080.png",
+          "alt" : "1920x1080",
+          "loading" : "lazy",
+          "width" : 1920,
+          "height" : 1080,
+          "size_type" : "exact"
+        }
+      }, {
+        "id" : "4f389f6e-ed34-0e46-f815-cfb2f42b86da",
+        "name" : "well_content",
+        "label" : "Well Content",
+        "required" : false,
+        "locked" : false,
+        "type" : "richtext",
+        "display_width" : null,
+        "default" : "<h3>Headline Copy Goes Here</h3>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+      }, {
+        "id" : "677be69c-9f39-8db4-2695-d2d1617b54a1",
+        "name" : "well_button_link",
+        "label" : "Well Button - Link",
+        "required" : false,
+        "locked" : false,
+        "allow_new_line" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "https://www.novaflexled.com/"
+      }, {
+        "id" : "131690f4-54c4-df23-5965-c5804f27badc",
+        "name" : "well_button_text",
+        "label" : "Well Button - Text",
+        "required" : false,
+        "locked" : false,
+        "allow_new_line" : false,
+        "type" : "text",
+        "display_width" : null,
+        "default" : "Call To Action"
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : [ {
+        "well_image" : {
+          "src" : "https://f.hubspotusercontent40.net/hubfs/7233392/Imported%20images/1920x1080.png",
+          "alt" : "1920x1080",
+          "loading" : "lazy",
+          "width" : 1920,
+          "height" : 1080,
+          "size_type" : "exact"
+        },
+        "well_content" : "<h3>Headline Copy Goes Here</h3>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+        "well_button_link" : "https://www.novaflexled.com/",
+        "well_button_text" : "Call To Action"
+      }, {
+        "well_image" : {
+          "src" : "https://f.hubspotusercontent40.net/hubfs/7233392/Imported%20images/1920x1080.png",
+          "alt" : "1920x1080",
+          "loading" : "lazy",
+          "width" : 1920,
+          "height" : 1080,
+          "size_type" : "exact"
+        },
+        "well_content" : "<h3>Headline Copy Goes Here</h3>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+        "well_button_link" : "https://www.novaflexled.com/",
+        "well_button_text" : "Call To Action"
+      } ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "section_content" : "<h2>Headline Copy Goes Here</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+      "content_well" : [ {
+        "well_image" : {
+          "src" : "https://f.hubspotusercontent40.net/hubfs/7233392/Imported%20images/1920x1080.png",
+          "alt" : "1920x1080",
+          "loading" : "lazy",
+          "width" : 1920,
+          "height" : 1080,
+          "size_type" : "exact"
+        },
+        "well_content" : "<h3>Headline Copy Goes Here</h3>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+        "well_button_link" : "https://www.novaflexled.com/",
+        "well_button_text" : "Call To Action"
+      }, {
+        "well_image" : {
+          "src" : "https://f.hubspotusercontent40.net/hubfs/7233392/Imported%20images/1920x1080.png",
+          "alt" : "1920x1080",
+          "loading" : "lazy",
+          "width" : 1920,
+          "height" : 1080,
+          "size_type" : "exact"
+        },
+        "well_content" : "<h3>Headline Copy Goes Here</h3>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+        "well_button_link" : "https://www.novaflexled.com/",
+        "well_button_text" : "Call To Action"
+      } ]
+    }
+  }, {
+    "id" : "9bc5c727-4522-f595-bc61-e8fb814c8465",
+    "name" : "section_content_full_width_well",
+    "label" : "Section Content (Full Width Well)",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "740400f4-f31b-ce1f-d1ee-5c3351ee6d23",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "full-width-well",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "children" : [ {
+      "id" : "f080c31b-0153-f01c-a215-4e79332748d8",
+      "name" : "well_content_above",
+      "label" : "Well Content (Above Image)",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<h2>Headline Copy Goes Here</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+    }, {
+      "id" : "297ee208-5528-8dd2-1081-b68033dd9899",
+      "name" : "well_image",
+      "label" : "Row Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : false,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "src" : "https://f.hubspotusercontent40.net/hubfs/7233392/Imported%20images/1920x1080.png",
+        "alt" : "1920x1080",
+        "loading" : "lazy",
+        "width" : 1920,
+        "height" : 1080,
+        "size_type" : "exact"
+      }
+    }, {
+      "id" : "1c524bad-f762-68e2-e09e-b74475c20a8d",
+      "name" : "well_content",
+      "label" : "Well Content (Below Image)",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<h2>Headline Copy Goes Here</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+    }, {
+      "id" : "08af9fee-6e3c-924a-04b5-5dd4e718ee33",
+      "name" : "well_button_link",
+      "label" : "Well Button - Link",
+      "required" : false,
+      "locked" : false,
+      "allow_new_line" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "https://www.novaflexled.com/"
+    }, {
+      "id" : "01d84095-e816-c71c-34e3-2d4975016ba7",
+      "name" : "well_button_text",
+      "label" : "Well Button - Text",
+      "required" : false,
+      "locked" : false,
+      "allow_new_line" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Call To Action"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "well_content_above" : "<h2>Headline Copy Goes Here</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+      "well_image" : {
+        "src" : "https://f.hubspotusercontent40.net/hubfs/7233392/Imported%20images/1920x1080.png",
+        "alt" : "1920x1080",
+        "loading" : "lazy",
+        "width" : 1920,
+        "height" : 1080,
+        "size_type" : "exact"
+      },
+      "well_content" : "<h2>Headline Copy Goes Here</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+      "well_button_link" : "https://www.novaflexled.com/",
+      "well_button_text" : "Call To Action"
+    }
+  }, {
+    "id" : "34352e97-0f52-4b8e-109b-d475653208c0",
+    "name" : "row_style",
+    "label" : "Row Style",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "7cbe89e0-09cc-0bdc-281d-7c029b54a4d7",
+      "name" : "row_background",
+      "label" : "Row Background",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "white", "White" ], [ "gray", "Gray" ], [ "image", "Image" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "white"
+    }, {
+      "id" : "fc16346c-df72-bc9b-7001-bc3760da43b5",
+      "name" : "row_background_image",
+      "label" : "Row Background Image",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "7cbe89e0-09cc-0bdc-281d-7c029b54a4d7",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "image",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "responsive" : true,
+      "resizable" : false,
+      "show_loading" : false,
+      "type" : "image",
+      "display_width" : null,
+      "default" : {
+        "src" : "https://f.hubspotusercontent40.net/hubfs/7233392/Imported%20images/1920x1080.png",
+        "alt" : "1920x1080",
+        "loading" : "lazy",
+        "width" : 1920,
+        "height" : 1080
+      }
+    }, {
+      "id" : "f470edf7-225d-7177-abba-9774e6134ac8",
+      "name" : "center_button",
+      "label" : "Center Button?",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "display_width" : null,
+      "default" : false
+    }, {
+      "id" : "5ce9aa50-ac58-ae08-01ee-011901d5006b",
+      "name" : "remove_top_padding",
+      "label" : "Remove Top Padding?",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "display_width" : null,
+      "default" : false
+    }, {
+      "id" : "8bade0c8-deb2-7880-b989-8994417f746b",
+      "name" : "remove_bottom_padding",
+      "label" : "Remove Bottom Padding?",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "display_width" : null,
+      "default" : false
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "row_background" : "white",
+      "row_background_image" : {
+        "src" : "https://f.hubspotusercontent40.net/hubfs/7233392/Imported%20images/1920x1080.png",
+        "alt" : "1920x1080",
+        "loading" : "lazy",
+        "width" : 1920,
+        "height" : 1080
+      },
+      "center_button" : false,
+      "remove_top_padding" : false,
+      "remove_bottom_padding" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "row_type" : "basic-content",
+    "basic_row" : {
+      "section_content" : "<h2>Headline Copy Goes Here</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+      "section_button" : {
+        "section_button_link" : "https://www.novaflexled.com/",
+        "section_button_text" : "Call To Action",
+        "section_button_style" : "yellow"
+      }
+    },
+    "img_content_row" : {
+      "section_content_copy" : "<h2>Headline Copy Goes Here</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+      "row_image" : {
+        "src" : "https://f.hubspotusercontent40.net/hubfs/7233392/Imported%20images/800x1000.png",
+        "alt" : "800x1000",
+        "loading" : "lazy",
+        "width" : 800,
+        "height" : 1000,
+        "size_type" : "exact"
+      },
+      "row_content" : "<h2>Headline Copy Goes Here</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+      "row_button_link" : "https://www.novaflexled.com/",
+      "row_button_text" : "Call To Action",
+      "image_alignment" : "left"
+    },
+    "two_column_well_row" : {
+      "section_content" : "<h2>Headline Copy Goes Here</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+      "content_well" : [ {
+        "well_image" : {
+          "src" : "https://f.hubspotusercontent40.net/hubfs/7233392/Imported%20images/1920x1080.png",
+          "alt" : "1920x1080",
+          "loading" : "lazy",
+          "width" : 1920,
+          "height" : 1080,
+          "size_type" : "exact"
+        },
+        "well_content" : "<h3>Headline Copy Goes Here</h3>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+        "well_button_link" : "https://www.novaflexled.com/",
+        "well_button_text" : "Call To Action"
+      }, {
+        "well_image" : {
+          "src" : "https://f.hubspotusercontent40.net/hubfs/7233392/Imported%20images/1920x1080.png",
+          "alt" : "1920x1080",
+          "loading" : "lazy",
+          "width" : 1920,
+          "height" : 1080,
+          "size_type" : "exact"
+        },
+        "well_content" : "<h3>Headline Copy Goes Here</h3>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+        "well_button_link" : "https://www.novaflexled.com/",
+        "well_button_text" : "Call To Action"
+      } ]
+    },
+    "section_content_full_width_well" : {
+      "section_content_full_" : "<h2>Headline Copy Goes Here</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+      "well_image" : {
+        "src" : "https://f.hubspotusercontent40.net/hubfs/7233392/Imported%20images/1920x1080.png",
+        "alt" : "1920x1080",
+        "loading" : "lazy",
+        "width" : 1920,
+        "height" : 1080,
+        "size_type" : "exact"
+      },
+      "well_content" : "<h2>Headline Copy Goes Here</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+      "well_button_link" : "https://www.novaflexled.com/",
+      "well_button_text" : "Call To Action"
+    },
+    "row_style" : {
+      "row_background" : "white",
+      "row_background_image" : {
+        "src" : "https://f.hubspotusercontent40.net/hubfs/7233392/Imported%20images/1920x1080.png",
+        "alt" : "1920x1080",
+        "loading" : "lazy",
+        "width" : 1920,
+        "height" : 1080
+      },
+      "center_button" : false,
+      "remove_top_padding" : false,
+      "remove_bottom_padding" : false
+    }
+  } ]
+} ]

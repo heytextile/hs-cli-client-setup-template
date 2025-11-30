@@ -1,0 +1,370 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 18,
+  "attachedStylesheets" : [ ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_191357906",
+        "label" : "Site Footer",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "site-footer",
+          "per_widget_wrapper_html" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "overrideable" : false
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_97417973",
+            "label" : "Container",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "container",
+              "per_widget_wrapper_html" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "overrideable" : false
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 3,
+                "name" : "module_783618567",
+                "label" : "Logo",
+                "type" : "custom_widget",
+                "params" : {
+                  "css_class" : "site-footer__logo",
+                  "schema_version" : 2,
+                  "path" : "/Marketplace/HubSpot/HTML/Custom Module/HTML",
+                  "per_widget_wrapper_html" : "",
+                  "css_style" : "",
+                  "html" : "{% include \"/Textile_NovaFlex/assets/img/novaflex-logo-footer_no-tagline.html\" %}",
+                  "wrapping_html" : "",
+                  "css_id" : "",
+                  "widget_name" : "HTML",
+                  "css_id_str" : "",
+                  "overrideable" : false
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "3" : {
+                "x" : 3,
+                "w" : 3,
+                "name" : "module_723291878",
+                "label" : "About Column",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "site-footer__col site-footer__about",
+                  "per_widget_wrapper_html" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "overrideable" : false
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_308896911",
+                    "label" : "Header",
+                    "type" : "custom_widget",
+                    "params" : {
+                      "css_style" : "",
+                      "header_tag" : "h4",
+                      "css_id" : "",
+                      "css_class" : "site-footer__header",
+                      "schema_version" : 2,
+                      "path" : "@hubspot/header",
+                      "per_widget_wrapper_html" : "",
+                      "wrapping_html" : "",
+                      "value" : "About Us",
+                      "widget_name" : "Header",
+                      "css_id_str" : "",
+                      "overrideable" : false
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                }, {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_490370410",
+                    "label" : "Rich Text",
+                    "type" : "custom_widget",
+                    "params" : {
+                      "css_class" : "",
+                      "schema_version" : 2,
+                      "path" : "@hubspot/rich_text",
+                      "per_widget_wrapper_html" : "",
+                      "css_style" : "",
+                      "html" : "<p>Nova Flex is a premier provider of customized architectural-grade LED Strip Light and Neon Solutions. We work with specifiers and distributors across North America.</p>",
+                      "wrapping_html" : "",
+                      "css_id" : "",
+                      "widget_name" : "Rich Text",
+                      "css_id_str" : "",
+                      "overrideable" : false
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "6" : {
+                "x" : 6,
+                "w" : 2,
+                "name" : "module_416573025",
+                "label" : "Links Column",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "site-footer__col site-footer__links",
+                  "per_widget_wrapper_html" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "overrideable" : false
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_674145610",
+                    "label" : "Header",
+                    "type" : "custom_widget",
+                    "params" : {
+                      "css_style" : "",
+                      "header_tag" : "h4",
+                      "css_id" : "",
+                      "css_class" : "site-footer__header",
+                      "schema_version" : 2,
+                      "path" : "@hubspot/header",
+                      "per_widget_wrapper_html" : "",
+                      "wrapping_html" : "",
+                      "value" : "Links",
+                      "widget_name" : "Header",
+                      "css_id_str" : "",
+                      "overrideable" : false
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                }, {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_318764821",
+                    "label" : "Simple Menu",
+                    "type" : "custom_widget",
+                    "params" : {
+                      "css_class" : "site-footer__menu",
+                      "schema_version" : 2,
+                      "menu_tree" : [ {
+                        "children" : [ ],
+                        "isPublished" : false,
+                        "linkLabel" : "Link 1",
+                        "type" : "PAGE_LINK"
+                      }, {
+                        "children" : [ ],
+                        "isPublished" : false,
+                        "linkLabel" : "Link 2",
+                        "type" : "PAGE_LINK"
+                      }, {
+                        "children" : [ ],
+                        "isPublished" : false,
+                        "linkLabel" : "Link 3",
+                        "type" : "PAGE_LINK"
+                      } ],
+                      "path" : "@hubspot/simple_menu",
+                      "per_widget_wrapper_html" : "",
+                      "css_style" : "",
+                      "wrapping_html" : "",
+                      "css_id" : "",
+                      "widget_name" : "Simple Menu",
+                      "css_id_str" : "",
+                      "overrideable" : false
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              },
+              "8" : {
+                "x" : 8,
+                "w" : 4,
+                "name" : "module_687110850",
+                "label" : "Info Column",
+                "type" : "cell",
+                "params" : {
+                  "css_class" : "site-footer__col site-footer__info",
+                  "per_widget_wrapper_html" : "",
+                  "css_style" : "",
+                  "wrapping_html" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "overrideable" : false
+                },
+                "rows" : [ {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_338248835",
+                    "label" : "Header",
+                    "type" : "custom_widget",
+                    "params" : {
+                      "css_style" : "site-footer__header",
+                      "header_tag" : "h4",
+                      "css_id" : "",
+                      "css_class" : "site-footer__header",
+                      "schema_version" : 2,
+                      "path" : "@hubspot/header",
+                      "per_widget_wrapper_html" : "",
+                      "wrapping_html" : "",
+                      "value" : "Contact Us",
+                      "widget_name" : "Header",
+                      "css_id_str" : "",
+                      "overrideable" : false
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                }, {
+                  "0" : {
+                    "x" : 0,
+                    "w" : 12,
+                    "name" : "module_136522033",
+                    "label" : "Rich Text",
+                    "type" : "custom_widget",
+                    "params" : {
+                      "css_class" : "",
+                      "schema_version" : 2,
+                      "path" : "@hubspot/rich_text",
+                      "per_widget_wrapper_html" : "",
+                      "css_style" : "",
+                      "html" : "<p><a href=\"tel:1-800-595-6302\" rel=\"noopener\">800.595.6302</a></p>\n<p><a href=\"mailto:service@novaflexled.com\">service@novaflexled.com</a></p>\n<p>2789 Clearwater Rd, Ste X St. Cloud, MN 56301</p>",
+                      "wrapping_html" : "",
+                      "css_id" : "",
+                      "widget_name" : "Rich Text",
+                      "css_id_str" : "",
+                      "overrideable" : false
+                    },
+                    "rows" : [ ],
+                    "rowMetaData" : [ ],
+                    "cells" : [ ],
+                    "cssId" : "",
+                    "cssClass" : "",
+                    "cssStyle" : "",
+                    "styles" : null,
+                    "widgets" : [ ]
+                  }
+                } ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

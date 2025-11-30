@@ -1,0 +1,164 @@
+{% unless module.header_type == "hero_overlay" %}
+<center class="email-center">
+	<div class="webkit">
+<!--[if (gte mso 9)|(IE)]>
+<table width="680" align="center">
+<tr>
+<td>
+<![endif]-->
+<table id="header" class="outer" align="center">
+	<tr>
+		<td>
+
+{% if module.header_type == "two_col" %}
+<table class="header-two-col">
+	<tr>
+		<td class="two-column">
+			<!--[if (gte mso 9)|(IE)]>
+			<table width="100%">
+			<tr>
+			<td width="50%" valign="middle" dir="ltr">
+			<![endif]-->
+			<div class="left-column column">
+				<table width="100%">
+					<tr>
+						<td class="inner">
+							<table class="contents">
+								<tr>
+									<td class="site-logo">
+										<a href="https://www.novaflexled.com/">
+											<img alt="{{ site_settings.company_name }}" src="https://f.hubspotusercontent40.net/hubfs/7233392/Nova%20Flex%20Logo.png">
+										</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<!--[if (gte mso 9)|(IE)]>
+			</td><td width="50%" valign="middle" dir="ltr">
+			<![endif]-->
+			<div class="right-column column">
+				<table width="100%">
+					<tr>
+						<td class="inner">
+							<table class="contents">
+								<tr>
+									<td class="social-icons">
+										<p style="margin: 0;">
+											<a href="https://www.facebook.com/NovaFlexLed/"><img src="https://f.hubspotusercontent40.net/hubfs/7233392/email-images/NF-facebook-gray.png" alt="Facebook"></a> &nbsp; &nbsp; <a href="https://twitter.com/novaflexled"><img src="https://f.hubspotusercontent40.net/hubfs/7233392/email-images/twitter.png" alt="Twitter"></a> &nbsp; &nbsp; <a href="https://www.instagram.com/novaflexled/"><img src="https://f.hubspotusercontent40.net/hubfs/7233392/email-images/NF-instagram-gray.png" alt="Instagram"></a> &nbsp; &nbsp; <a href="https://www.linkedin.com/company/nova-flex/"><img src="https://f.hubspotusercontent40.net/hubfs/7233392/email-images/NF-linkedIn-grey.png" alt="LinkedIn"></a> &nbsp; &nbsp; <a href="https://www.youtube.com/channel/UCeFjvPwq82iIO_2oDft1Nrw"><img src="https://f.hubspotusercontent40.net/hubfs/7233392/email-images/NF-youtube-grey.png" alt="YouTube"></a> &nbsp; &nbsp; <a href="https://www.pinterest.com/novaflex/?eq=nova%20flex%20led&etslf=6198"><img src="https://f.hubspotusercontent40.net/hubfs/7233392/email-images/NF-pinterest-grey.png" alt="Pinterest"></a>
+										</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<!--[if (gte mso 9)|(IE)]>
+			</td>
+			</tr>
+			</table>
+			<![endif]-->
+		</td>
+	</tr>
+</table>
+{% endif %}
+{% if module.header_type == "stacked" %}
+<table class="header-stacked">
+	<tr>
+		<td class="inner contents social-icons">
+			<p style="margin: 0;">
+				<a href="https://www.facebook.com/NovaFlexLed/"><img src="https://f.hubspotusercontent40.net/hubfs/7233392/email-images/facebook-f-white.png" alt="Facebook"></a> &nbsp; &nbsp; <a href="https://twitter.com/novaflexled"><img src="https://f.hubspotusercontent40.net/hubfs/7233392/email-images/twitter-white.png" alt="Twitter"></a> &nbsp; &nbsp; <a href="https://www.instagram.com/novaflexled/"><img src="https://f.hubspotusercontent40.net/hubfs/7233392/email-images/instagram-white.png" alt="Instagram"></a> &nbsp; &nbsp; <a href="https://www.linkedin.com/company/nova-flex/"><img src="https://f.hubspotusercontent40.net/hubfs/7233392/email-images/NF_LinkedIn_White.png" alt="LinkedIn"></a> &nbsp; &nbsp; <a href="https://www.youtube.com/channel/UCeFjvPwq82iIO_2oDft1Nrw"><img src="https://f.hubspotusercontent40.net/hubfs/7233392/email-images/NF_YouTube_White.png" alt="YouTube"></a> &nbsp; &nbsp; <a href="https://www.pinterest.com/novaflex/?eq=nova%20flex%20led&etslf=6198"><img src="https://f.hubspotusercontent40.net/hubfs/7233392/email-images/NF_Pinterest_White.png" alt="Pinterest"></a>
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="inner contents site-logo">
+			<a href="https://www.novaflexled.com/">
+				<img alt="{{ site_settings.company_name }}" src="https://f.hubspotusercontent40.net/hubfs/7233392/Nova%20Flex%20Logo.png">
+			</a>
+		</td>
+	</tr>
+</table>
+{% endif %}
+
+		</td>
+	</tr>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+	</div>
+</center>
+{% endunless %}
+
+
+<center class="email-center">
+	<div class="webkit">
+<!--[if (gte mso 9)|(IE)]>
+<table width="680" align="center">
+<tr>
+<td>
+<![endif]-->
+<table id="hero" class="outer" align="center">
+	<tr>
+		<td>
+			<table>
+				<tr>
+					<td class="hero-background" style="background-image: url('{{ module.hero_background.src }}');">
+						<!--[if gte mso 9]>
+						<v:rect  style="width:680px;" xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false">
+							<v:fill  origin="0, 0" position="0, 0" src="{{ module.hero_background.src }}" color="#354052" type="frame" aspect="atleast" size="1,1" />
+							<v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+						<![endif]-->
+
+							{% if module.header_type == "hero_overlay" %}
+							<table>
+								<tr>
+									<td class="inner contents hero-header-overlay site-logo">
+										<a href="https://www.novaflexled.com/">
+											<img alt="{{ site_settings.company_name }}" src="https://f.hubspotusercontent40.net/hubfs/7233392/email-images/novaflex-logo-white.png">
+										</a>
+									</td>
+								</tr>
+							</table>
+							{% endif %}
+							<table>
+								<tr>
+									<td class="inner contents hero-content{% if module.header_type == 'hero_overlay' %} overlay-content{% endif %}">
+										{{ module.hero_content }}
+										{% if module.hero_button_link %}
+											<table class="btn-table">
+												<tr>
+													<td class="btn-td"><a href="{{ module.hero_button_link }}" class="btn-a"><!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->{{ module.hero_button_text }}<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]--></a></td>
+												</tr>
+											</table>
+										{% endif %}
+									</td>
+								</tr>
+							</table>
+
+						<!--[if gte mso 9]>
+							</v:textbox>
+						</v:rect>
+						<![endif]-->
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td class="vertical-spacer">&nbsp;</td>
+	</tr>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+	</div>
+</center>

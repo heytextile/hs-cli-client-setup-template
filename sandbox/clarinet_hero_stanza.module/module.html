@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <div
+      class="stanza-hero"
+      style="
+        background-image: url('{{ module.vendor_group.background_image.src }}');
+      "
+    >
+      <div class="stanza-hero__logo-wrapper">
+            {% if module.vendor_group.supplier_logo.src %}
+                {% set sizeAttrs = 'width="auto" height="auto" style="max-width: 100%; height: auto; max-height: 150px; "' %}
+              {% endif %}
+               {% set loadingAttr = module.vendor_group.supplier_logo.loading != 'disabled' ? 'loading="{{ module.vendor_group.supplier_logo.loading }}"' : '' %}
+              <img src="{{ module.vendor_group.supplier_logo.src }}" alt="{{ module.vendor_group.supplier_logo.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+      </div>
+    </div>
+    <div class="stanza-id" style="background-color: {{ module.label_group.id_banner_color.color }}{{ module.label_group.id_banner_color.opacity }}">
+      <div class="stanza-id__title">
+        <h1 class="stanza-id__heading">{{ module.label_group.dashboard_title }}</h1>
+        <p class="stanza-id__subhead">{{ module.label_group.subtitle }}</p>
+      </div>
+      <div class="stanza-id__brand">
+            {% set href = module.link_field.url.href %}
+            {% endif %}
+            <a href="{{ href }}"
+              {% if module.link_field.open_in_new_tab %}target="_blank"{% endif %}
+              {% if module.link_field.rel %}rel="{{ module.link_field.rel }}"{% endif %}
+              ><img src="    {{ module.label_group.white_label_logo.src }}"
+                        loading="lazy"
+                        class="brand-link__logo"/>
+            </a>
+      </div>
+    </div>       
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

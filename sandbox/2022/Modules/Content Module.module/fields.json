@@ -1,0 +1,115 @@
+[ {
+  "id" : "53ca3149-4670-4925-c5f8-c0a8ed321499",
+  "name" : "enable_disable_border",
+  "label" : "Enable/Disable Border",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "display_width" : null,
+  "default" : true
+}, {
+  "id" : "135a8e01-098e-db4c-e22b-835cae9d0710",
+  "name" : "border_color",
+  "label" : "Border Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "display_width" : null,
+  "default" : {
+    "color" : "#ecedeb",
+    "opacity" : 100
+  }
+}, {
+  "id" : "fdb7bd93-ba54-7423-9581-2e4845b6827f",
+  "name" : "content_alignment",
+  "label" : "Content Alignment",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "1", "Left" ], [ "2", "Center" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "1"
+}, {
+  "id" : "da00fbaf-9cac-4d36-3d77-e1bcf3b74dfa",
+  "name" : "background_position",
+  "label" : "Background position",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "1", "Top" ], [ "2", "Bottom" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "1"
+}, {
+  "id" : "c11fbef4-968f-8404-f568-3aa3a5439d62",
+  "name" : "content",
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<p style=\"mso-line-height-rule: exactly; line-height: 175%; font-weight: normal;\">Dear Spencer,</p>\n<p style=\"mso-line-height-rule: exactly; line-height: 175%; font-weight: normal;\">&nbsp;</p>\n<p style=\"mso-line-height-rule: exactly; line-height: 175%; font-weight: normal;\">We hope you are enjoying the summer!&nbsp;If you’re already a Textile friend, great to see you again!&nbsp;If you’re new here, WELCOME! We are excited to connect with you.</p>\n<p style=\"mso-line-height-rule: exactly; line-height: 175%; font-weight: normal;\">&nbsp;</p>\n<p style=\"mso-line-height-rule: exactly; line-height: 175%; font-weight: normal;\">Are you looking to launch your new business concept, grow your business, or refresh your brand? Check out our business builder packages. No matter where you are in the process, there is something for everyone.</p>"
+}, {
+  "id" : "39e7efeb-b6df-0772-00ca-80e498ee4070",
+  "name" : "image_field",
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "src" : "https://4188535.fs1.hubspotusercontent-na1.net/hubfs/4188535/IG%20FB_Hubspot-01.png",
+    "alt" : "IG FB_Hubspot-01",
+    "loading" : "lazy",
+    "width" : 200,
+    "height" : 200
+  }
+}, {
+  "id" : "53aca37f-82e6-f725-b96a-37062215585e",
+  "name" : "button_label",
+  "label" : "Button Label",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Let’s do this!"
+}, {
+  "id" : "84fdcdef-643c-5816-ad6e-28bde065c9bc",
+  "name" : "button_link",
+  "label" : "Button Link",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null
+}, {
+  "id" : "278a0db3-4f23-5f93-caac-37c581da7ce8",
+  "name" : "top_icon",
+  "label" : "Top Icon",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "src" : "https://4188535.fs1.hubspotusercontent-na1.net/hubfs/4188535/2022/images/email/icon.gif",
+    "alt" : "icon",
+    "loading" : "lazy",
+    "width" : 540,
+    "height" : 71
+  }
+} ]

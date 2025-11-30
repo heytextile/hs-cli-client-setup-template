@@ -1,0 +1,32 @@
+{
+  // Auto-upload on save + watch sandbox/prod folders
+  "hubspot.uploadOnSave": true,
+  "hubspot.cms.uploadFoldersToWatch": ["sandbox", "prod"],
+
+  // New terminals open in sandbox by default
+  "terminal.integrated.cwd": "sandbox",
+
+  // One-click terminal profiles (zsh on macOS)
+  "terminal.integrated.profiles.osx": {
+    "Textile Sandbox": {
+      "path": "/bin/zsh",
+      "cwd": "${workspaceFolder}/sandbox"
+    },
+    "Textile Prod": {
+      "path": "/bin/zsh",
+      "cwd": "${workspaceFolder}/prod"
+    }
+  },
+
+  // 100% token isolation per client (critical for multiple clients)
+  "terminal.integrated.env.osx": {
+    "HUBSPOT_CLI_CONFIG_PATH": "${workspaceFolder}/.hubspot-auth/textile"
+  },
+
+  // Quality of life
+  "editor.formatOnSave": true,
+  "files.associations": {
+    "*.html": "handlebars"
+  },
+  "editor.minimap.enabled": false
+}

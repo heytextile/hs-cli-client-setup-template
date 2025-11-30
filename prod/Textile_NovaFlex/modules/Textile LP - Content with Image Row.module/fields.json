@@ -1,0 +1,86 @@
+[ {
+  "id" : "754fac39-0a5b-2b18-c331-b8a58a13785b",
+  "name" : "row_content",
+  "label" : "Row Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>\n<p>Aenean vitae risus tempor, molestie lectus a, bibendum orci. Nullam malesuada turpis quis convallis lobortis. Cras ultricies ornare nunc quis scelerisque. Cras eu odio ullamcorper, euismod quam venenatis, suscipit ex. Integer efficitur vestibulum lobortis. Cras varius nisl sit amet dolor congue blandit. Fusce cursus euismod risus, quis maximus erat malesuada vitae.</p>"
+}, {
+  "id" : "6da525b8-70d4-8eac-be2e-23290b0116b8",
+  "name" : "row_image",
+  "label" : "Row Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent40.net/hubfs/7233392/Imported%20images/1920x1080.png",
+    "alt" : "1920x1080",
+    "loading" : "lazy",
+    "width" : 1920,
+    "height" : 1080,
+    "max_width" : 1920,
+    "max_height" : 1080
+  }
+}, {
+  "id" : "92c58cf0-952f-4df9-0009-ba40ce6dec42",
+  "name" : "appearance_options",
+  "label" : "Appearance Options",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "ccf3d60c-e03d-3df7-afdc-a6ca3c30ea7d",
+    "name" : "image_align",
+    "label" : "Image Align",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "left", "Left" ], [ "right", "Right" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "right"
+  }, {
+    "id" : "42801091-1281-d030-1829-ca7bddb7a229",
+    "name" : "background_color",
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "bg__white", "White" ], [ "bg__light", "Light" ], [ "bg__dark text-color__white", "Dark" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "bg__white"
+  }, {
+    "id" : "36131aa6-7cf9-0168-e79b-26a1f78964c8",
+    "name" : "remove_top_padding",
+    "label" : "Remove Top Padding?",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : false
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "image_align" : "right",
+    "background_color" : "bg__white",
+    "remove_top_padding" : false
+  }
+} ]
