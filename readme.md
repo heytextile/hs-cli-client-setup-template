@@ -21,7 +21,7 @@ After cloning this template, complete the following steps to configure for your 
 
 3. **Rename Folders:**
 
-   - Update folder names (e.g., `Textile_Heirloom`, `Textile_NovaFlex`) to your client’s brand or project names.
+   - Update folder names (e.g., `client-a`, `client-b`) to your client’s brand or project names.
    - Update any references to these folders in configs and code.
 
 4. **Create Workspace File:**
