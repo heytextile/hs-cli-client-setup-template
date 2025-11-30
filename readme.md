@@ -6,16 +6,32 @@ This repo contains all code and configuration for both production and sandbox Hu
 
 ## 1. Sync Local Workspace with GitHub
 
-**Command Line:**
+First, we want to confirm that we have the same code locally that the online repo has. This really does not apply if you're working by yourself, because generally changes made are made locally anyway. But this step is a good practice for times when multiple devs might be in the repo.
+
+**Command Line - Commit local changes:**
+
+```sh
+git add .
+git commit -m "Your local changes"
+```
+
+**GitHub Desktop - Commit local changes:**
+
+1. Review changes and add a commit message.
+2. Click "Commit to main" and "Push origin".
+
+**Command Line - Pull remote changes:**
 
 ```sh
 git pull
 ```
 
-**GitHub Desktop:**
+**GitHub Desktop - Pull remote changes:**
 
 1. Open GitHub Desktop.
 2. Click "Fetch origin" to pull the latest changes.
+
+If there are conflicts, Git will pause to resolve conflicts.
 
 ---
 
@@ -42,11 +58,13 @@ git commit -m "Sync: fetch from production"
 git push
 ```
 
+Here, again, github desktop can also be used
+
 ---
 
 ## 3. Start Development in Sandbox (Watch Mode)
 
-Upload your local code to the sandbox portal:
+Upload your local code to the sandbox portal. Open terminal in the sandbox folder (or change directories), then:
 
 ```sh
 hs cms upload . --account=textile-cms-sandbox --config=hubspot.config.yml
@@ -83,7 +101,7 @@ git push
 
 ## 5. Upload Changes to Production
 
-When ready to deploy to the live site, upload your code to the production portal:
+When ready to deploy to the live site, upload your code to the production portal. Open terminal in the prod folder (or change directories), then:
 
 ```sh
 hs cms upload . --account=textile-prod --config=hubspot.config.yml
