@@ -3,19 +3,6 @@ portals:
   - name: textile-cms-sandbox
     portalId: 50764454
     env: prod
-    authType: personalaccesskey
-    scopes:
-      - content
-    personalAccessKey: >-
-      CiRuYTEtYmUyYy1hYmFiLTQyZTMtYjkwOC1mMWYwMzhmYWRlZmEQprWaGBinl7sCKhkABeaRgv6EHp48bpSx8UXPzc07jej8zGbnSgNuYTE
-    auth:
-      scopes:
-        - content
-      tokenInfo:
-        accessToken: >-
-          CNjljratMxItQlNQMl8kQEwrAiAACAkCARMXAQEBAgECAQIBDQMKAQIDBxsBAQEBJAIcAVsBGKa1mhggp5e7Aiju6QwyFNXf5GAnp9AjjEUfvBBcSfCqs2iVOqYBQlNQMl8kQEwrAk0AEBMGAAYAHQABAAEAAQBRACsAHAABAAEAAQABAA8AAQABAAQABQABAAEAAQABAAQAAQAFAAEAAQABAAgAAQAGAAIAAwABABAABAAPAAEACAAEAAEAAQABAAEAAQAEAAEABQABABIACQADAAEAMQABAAEAAQAEAAEAAQABAAEAAQABAAEAAQBBAAEABwAXAAEAQgAaAAEAOQEBAEIUQlsDqE19vyGRdfoDUSoM6eEAfQ9KA25hMVIAWgBgAWinl7sCcAB4AA
-        expiresAt: "2025-11-30T21:55:40.928Z"
-    accountType: STANDARD
   - name: textile-prod
     portalId: 4188535
     authType: personalaccesskey
@@ -23,3 +10,13 @@ portals:
       - content
     personalAccessKey: >-
       CiRuYTEtYjlkNC1hNGMwLTRkMjctYTMxMi01NTRjYjdlZjRiZjcQ99L_ARinl7sCKhkABeaRgrXaZp3TIfYThsVWEXxTXPxts6GXSgNuYTE
+    # HubSpot CLI Configuration
+    # This file will be updated automatically when you run `hs auth` and connect a portal.
+    # Do not add sensitive information here.
+
+portals:
+  # Example placeholder. This will be replaced by the CLI after authentication.
+  # - name: "my-portal"
+  #   portalId: "<your-portal-id>"
+  #   authType: "oauth2"
+  #   token: "<your-token>"

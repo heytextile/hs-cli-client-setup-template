@@ -1,6 +1,44 @@
-# Textile HubSpot CMS Workspace – Daily Workflow
+# HubSpot CMS Workspace – Daily Workflow (Multi-Client)
 
-This repo contains all code and configuration for both production and sandbox HubSpot portals for the Textile client. Use the instructions below for daily operations in this workspace.
+## 🚩 Post-Clone Setup Checklist
+
+After cloning this template, complete the following steps to configure for your client:
+
+1. **Update Placeholders:**
+
+   - Search for all `{{CLIENT_NAME}}`, `{{CLIENT_PORTAL_PROD}}`, `{{CLIENT_PORTAL_SANDBOX}}`, `{{CLIENT_BRAND}}`, and similar placeholders in all files.
+   - Replace with your client’s actual values.
+
+2. **Create Sandbox Portal:**
+
+   - In your HubSpot account, create a sandbox portal for development and testing.
+   - Use the HubSpot CLI (`hs auth`) to authenticate and add the sandbox portal to your `hubspot.config.yml`.
+   - Update all references to `{{CLIENT_PORTAL_SANDBOX}}` with your new sandbox portal ID.
+
+3. **Rename Folders:**
+
+   - Update folder names (e.g., `Textile_Heirloom`, `Textile_NovaFlex`) to your client’s brand or project names.
+   - Update any references to these folders in configs and code.
+
+4. **Create Workspace File:**
+
+   - After configuration, open VS Code’s command palette and select `File: Save Workspace As...` to create a new workspace file named for your client/project.
+   - This keeps the template repo clean and ensures your workspace file is client-specific.
+
+5. **Review Config Files:**
+
+   - Update `hubspot.config.yml` and any authentication files for your client’s portal IDs and credentials.
+
+6. **Check for Sensitive Data:**
+
+   - Ensure no old API keys, secrets, or credentials remain. Replace or remove as needed.
+
+7. **Test CLI Commands:**
+   - Run the CLI commands in this readme to confirm everything works for your client setup.
+
+---
+
+This repo contains code and configuration for both production and sandbox HubSpot portals for any client. Use the instructions below for daily operations in this workspace. Replace all placeholders (e.g., `{{CLIENT_NAME}}`, `{{CLIENT_PORTAL}}`) with your client-specific values.
 
 ---
 
@@ -40,7 +78,7 @@ If there are conflicts, Git will pause to resolve conflicts.
 Use the HubSpot CLI to fetch the latest code from production. This will overwrite local files with what’s live in production.
 
 ```sh
-hs cms fetch --account=textile-prod "/" --overwrite --config=hubspot.config.yml
+hs cms fetch --account={{CLIENT_PORTAL_PROD}} "/" --overwrite --config=hubspot.config.yml
 ```
 
 Review changes:
@@ -58,7 +96,7 @@ git commit -m "Sync: fetch from production"
 git push
 ```
 
-Here, again, github desktop can also be used
+You can also use GitHub Desktop for these steps.
 
 ---
 
@@ -67,13 +105,13 @@ Here, again, github desktop can also be used
 Upload your local code to the sandbox portal. Open terminal in the sandbox folder (or change directories), then:
 
 ```sh
-hs cms upload . --account=textile-cms-sandbox --config=hubspot.config.yml
+hs cms upload . --account={{CLIENT_PORTAL_SANDBOX}} --config=hubspot.config.yml
 ```
 
 Start watch mode for instant preview and auto-upload on save:
 
 ```sh
-hs cms watch --account=textile-cms-sandbox --config=hubspot.config.yml
+hs cms watch --account={{CLIENT_PORTAL_SANDBOX}} --config=hubspot.config.yml
 ```
 
 ---
@@ -104,7 +142,7 @@ git push
 When ready to deploy to the live site, upload your code to the production portal. Open terminal in the prod folder (or change directories), then:
 
 ```sh
-hs cms upload . --account=textile-prod --config=hubspot.config.yml
+hs cms upload . --account={{CLIENT_PORTAL_PROD}} --config=hubspot.config.yml
 ```
 
 ---
@@ -112,7 +150,7 @@ hs cms upload . --account=textile-prod --config=hubspot.config.yml
 **Notes:**
 
 - Always use the `--config=hubspot.config.yml` flag to ensure you’re using the workspace-specific authentication and portal setup.
-- By default, the workspace config is set to sandbox for safety. Specify `--account=textile-prod` only when you intend to deploy to production.
+- By default, the workspace config is set to sandbox for safety. Specify `--account={{CLIENT_PORTAL_PROD}}` only when you intend to deploy to production.
 
 ---
 
