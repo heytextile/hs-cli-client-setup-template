@@ -1,5 +1,9 @@
 # HubSpot CMS Workspace – Daily Workflow (Multi-Client)
 
+[Note on Folder Structure]
+
+This template includes `prod/` and `sandbox/` folders, which are intended to store all themes and files downloaded from your client's production and sandbox HubSpot portals. These folders are initially empty except for a `.gitkeep` file, which ensures Git tracks the folders even when they have no content. After running your sync/download commands, these folders will be populated with the actual client files. Do not remove the `.gitkeep` files unless the folders contain other files.
+
 ## 🚩 Post-Clone Setup Checklist
 
 After cloning this template, complete the following steps to configure for your client:

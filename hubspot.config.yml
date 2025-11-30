@@ -1,22 +1,10 @@
-defaultPortal: textile-cms-sandbox
-portals:
-  - name: textile-cms-sandbox
-    portalId: 50764454
-    env: prod
-  - name: textile-prod
-    portalId: 4188535
-    authType: personalaccesskey
-    scopes:
-      - content
-    personalAccessKey: >-
-      CiRuYTEtYjlkNC1hNGMwLTRkMjctYTMxMi01NTRjYjdlZjRiZjcQ99L_ARinl7sCKhkABeaRgrXaZp3TIfYThsVWEXxTXPxts6GXSgNuYTE
-    # HubSpot CLI Configuration
-    # This file will be updated automatically when you run `hs auth` and connect a portal.
-    # Do not add sensitive information here.
+# hubspot.config.yml
+# HubSpot CLI Configuration
+# This file will be updated automatically when you run `hs auth` and connect a portal.
+# Do not add sensitive information here.
 
-portals:
-  # Example placeholder. This will be replaced by the CLI after authentication.
-  # - name: "my-portal"
-  #   portalId: "<your-portal-id>"
-  #   authType: "oauth2"
-  #   token: "<your-token>"
+# Example portal. This will be replaced by the CLI after authentication.
+# - name: "my-portal"
+#   portalId: "<your-portal-id>"
+#   authType: "oauth2"
+#   token: "<your-token>"
