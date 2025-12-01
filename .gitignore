@@ -1,4 +1,23 @@
+# hubspot & node
 .hubspot-auth/
 node_modules/
+
+# macOS system files
 .DS_Store
-Thumbs.db
+.AppleDouble
+.LSOverride
+
+# Icon files
+Icon?
+
+# Thumbnails
+._*
+
+# macOS folder attributes
+.Spotlight-V100
+.Trashes
+.DocumentRevisions-V100
+.fseventsd
+.TemporaryItems
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
