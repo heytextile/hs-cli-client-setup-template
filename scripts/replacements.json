@@ -1,7 +1,7 @@
 {
     "CLIENT_NAME": "AcmeCorp",
-    "PROD_PORTAL_NAME": "123456",
+    "PROD_PORTAL_NAME": "acmecorp-prod",
     "PROD_PORTAL_ID": "654321",
-    "SANDBOX_PORTAL_NAME": "123456",
-    "SANDBOX_PORTAL_ID": "654321"
+    "SANDBOX_PORTAL_NAME": "acmecorp-cms-sandbox",
+    "SANDBOX_PORTAL_ID": "123456"
 }
