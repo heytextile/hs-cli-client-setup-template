@@ -40,6 +40,32 @@ After cloning this template, complete the following steps to configure for your 
 7. **Test CLI Commands:**
    - Run the CLI commands in this readme to confirm everything works for your client setup.
 
+## ⚡ HubSpot CLI Config File Best Practices
+
+To ensure the HubSpot CLI stores authentication keys and settings in the `hubspot.config.yml` file inside this workspace:
+
+1. **Always run CLI commands from the workspace root:**
+
+   ```zsh
+   cd /Users/sknisely/GIT_local/hs-cli-client-setup-template
+   hs auth login
+   ```
+
+2. **Or use the `--config` flag with the absolute path:**
+
+   ```zsh
+   hs auth login --config=/Users/sknisely/GIT_local/hs-cli-client-setup-template/hubspot.config.yml
+   ```
+
+3. **Avoid duplicate config files:**
+   If you see errors about existing config files, search for and remove duplicates outside your workspace.
+   ```zsh
+   find ~/GIT_local -name hubspot.config.yml
+   rm /path/to/unwanted/hubspot.config.yml
+   ```
+
+Following these steps ensures all credentials and settings are stored in the correct config file for this workspace.
+
 ---
 
 This repo contains code and configuration for both production and sandbox HubSpot portals for any client. Use the instructions below for daily operations in this workspace. Replace all placeholders (e.g., `{{CLIENT_NAME}}`, `{{CLIENT_PORTAL}}`) with your client-specific values.
