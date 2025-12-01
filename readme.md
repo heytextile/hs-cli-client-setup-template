@@ -5,16 +5,16 @@
 Open [replacements.json](/scripts/replacements.json) to update workspace variables. Run script to swap variables, then open the [cheat-sheet](/cheat-sheet.md):
 
 ```sh
-python scripts/replace_tokens.py scripts/replacements.json readme.md cheat-sheet.md
+python3 scripts/replace_tokens.py scripts/replacements.json readme.md cheat-sheet.md
 ```
 
 > Authorize CLI with portal: `hs account auth`
 
-> Navigate to root directory: `cd GIT_local/vs-profiles-hs/{{ROOT_DIR}}`
+> Navigate to root directory: `cd ~ GIT_local/vs-profiles-hs/{{ROOT_DIR}}`
 
-> Navigate to prod directory: `cd GIT_local/vs-profiles-hs/{{ROOT_DIR}}/prod`
+> Navigate to prod directory: `cd ~ GIT_local/vs-profiles-hs/{{ROOT_DIR}}/prod`
 
-> Navigate to sandbox directory `cd GIT_local/vs-profiles-hs/{{ROOT_DIR}}/sandbox`
+> Navigate to sandbox directory `cd ~ GIT_local/vs-profiles-hs/{{ROOT_DIR}}/sandbox`
 
 > Fetch production from root: `hs cms fetch "/" account={{PROD_PORTAL_NAME}} --overwrite`
 
