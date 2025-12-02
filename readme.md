@@ -16,9 +16,9 @@ python3 scripts/replace_tokens.py scripts/replacements.json readme.md cheat-shee
 
 > Navigate to sandbox directory `cd ~ GIT_local/vs-profiles-hs/{{ROOT_DIR}}/sandbox`
 
-> Fetch production from root: `hs cms fetch "/" account={{PROD_PORTAL_NAME}} --overwrite`
+> Fetch production from root: `hs cms fetch "/" --account={{PROD_PORTAL_NAME}} --overwrite`
 
-> Fetch sandbox from root: `hs cms fetch "/" account={{SANDBOX_PORTAL_NAME}} --overwrite`
+> Fetch sandbox from root: `hs cms fetch "/" --account={{SANDBOX_PORTAL_NAME}} --overwrite`
 
 > Target directory flag - prod: `--dest=GIT_local/vs-profiles-hs/{{ROOT_DIR}}/prod`
 
